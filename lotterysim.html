@@ -28,7 +28,7 @@
                 prompt("Enter your first five numbers with spaces in between:");
             var user_array = user_numbers.split(" ");
             document.write("The numbers you picked are:<br/>")
-            user_array = user_array.sort();
+            user_array = user_array.sort(function(a, b){return a-b});
             for (i = 0; i < user_array.length; i++) {
                 document.write(user_array[i] + "<br />");
             }
